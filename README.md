@@ -140,7 +140,7 @@ const config = {
 
 _1편 end_
 
-Reference>
-[Webpack Tutorial](https://github.com/AriaFallah/WebpackTutorial/tree/master/ko-arahansa/part1)
-[Webpack2와 모듈 번들링을 위한 초보자 가이드](https://github.com/FEDevelopers/tech.description/wiki/Webpack2%EC%99%80-%EB%AA%A8%EB%93%88%EB%B2%88%EB%93%A4%EB%A7%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C)
+#### Reference  
+[Webpack Tutorial](https://github.com/AriaFallah/WebpackTutorial/tree/master/ko-arahansa/part1)  
+[Webpack2와 모듈 번들링을 위한 초보자 가이드](https://github.com/FEDevelopers/tech.description/wiki/Webpack2%EC%99%80-%EB%AA%A8%EB%93%88%EB%B2%88%EB%93%A4%EB%A7%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C)  
 [Javascript 모듈화 도구, webpack](http://d2.naver.com/helloworld/0239818)

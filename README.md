@@ -9,6 +9,7 @@ A description of the `webpack.config.js` file is posted on the [blog](https://ja
 ## Usage
 #### First, Check the branch!
 (Following lists are linked each branch)
+이 Repository의 branch를 확인해주세요. 다음 리스트는 branch에 링크 되어있습니다.
 1. [Step 1. 기본 설정들에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-1)
 2. [Step 2. 각종 플러그인에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-2)
 3. [Step 3. Config's other options]

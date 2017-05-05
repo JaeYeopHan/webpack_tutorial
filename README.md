@@ -138,8 +138,6 @@ const config = {
 
 다음 포스팅에서는 보다 효율적으로 개발을 도와주고 애플리케이션의 성능 향상에 도움을 주는 `Plugins`에 대해 알아보겠습니다 :)
 
-포스팅에서 사용된 예제 코드는 [Github repository](https://github.com/JaeYeopHan/webpack2_tutorial)에서 확인하실 수 있습니다 :D
-
 _1편 end_
 
 Reference>

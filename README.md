@@ -9,8 +9,7 @@ Webpack version 2.5.0 기준으로 tutorial을 진행할 수 있는 Repository�
 ## Usage
 #### First, Check the branch!
 (Following lists are linked each branch)  
-이 Repository의 branch를 확인해주세요.  
-branch에 따라 Step이 나누어져 있습니다.  
+이 Repository의 branch를 확인해주세요. branch에 따라 **Tutorial Step**이 나누어져 있습니다.  
 다음 리스트는 branch에 링크 되어있습니다.
 1. [Step 1. 기본 설정들에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-1)
 2. [Step 2. 각종 플러그인에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-2)

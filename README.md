@@ -2,7 +2,7 @@
 This repository is a tutorial repository provided for beginner who start webpack2.
 
 ## Usage
-##### First, Check the branch!
+#### First, Check the branch!
 1. Step 1. Only basic configuration in webpack.config.js
 
 ## Installation

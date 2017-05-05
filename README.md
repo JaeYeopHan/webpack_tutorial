@@ -30,7 +30,7 @@ $ cd webpack2_tutorial
 $ npm install
 ```
 ## Contribution
-You're free to contribute to this project by submitting [issues](https://github.com/JaeYeopHan/webpack2_tutorial/issues) and/or [pull requests](https://github.com/JaeYeopHan/webpack2_tutorial/pulls).
+You're free to contribute to this project by submitting [issues](https://github.com/JaeYeopHan/webpack2_tutorial/issues) and/or [pull requests](https://github.com/JaeYeopHan/webpack2_tutorial/pulls).  
 자유롭게 issue를 남겨주시거나 Pull Request를 등록해주세요.
 
 ## LICENSE

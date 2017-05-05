@@ -6,9 +6,13 @@ A description of the `webpack.config.js` file is posted on the [blog](https://ja
 
 ## Usage
 #### First, Check the branch!
+(Following lists are linked each branch)
 1. [Step 1. Only basic configuration in webpack.config.js](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-1)
+2. [Step 2. Add plugins]
+3. [Step 3. Config's other options]
+4. [Step 4. Seperate dev and prod environment]
 
-#### or fork this repository
+#### or fork this repository and enjoy webpack!
 
 ## Installation
 ```bash
@@ -23,6 +27,8 @@ $ git clone https://github.com/JaeYeopHan/webpack2_tutorial
 $ cd webpack2_tutorial
 $ npm install
 ```
+## Contribution
+You're free to contribute to this project by submitting [issues](https://github.com/JaeYeopHan/webpack2_tutorial/issues) and/or [pull requests](https://github.com/JaeYeopHan/webpack2_tutorial/pulls).
 
 ## LICENSE
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>

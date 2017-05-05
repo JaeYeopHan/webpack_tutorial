@@ -1,5 +1,5 @@
 # Webpack2 Tutorial
-This repository is a tutorial repository provided for beginner who start webpack2.
+This repository is a tutorial repository provided for beginner who start webpack2.  
 A description of the `webpack.config.js` file is posted on the [blog](https://jaeyeophan.github.io/).
 
 ## Usage

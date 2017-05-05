@@ -16,7 +16,7 @@ $ mkdir webpack2_tutorial_dir
 $ cd webpack2_tutorial_dir
 $ git clone https://github.com/JaeYeopHan/webpack2_tutorial
 $ cd webpack2_tutorial
-% npm install
+$ npm install
 ```
 
 A description of the `webpack.config.js` file is posted on the [blog](https://jaeyeophan.github.io/).

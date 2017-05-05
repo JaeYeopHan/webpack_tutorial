@@ -1,9 +1,10 @@
 # Webpack2 Tutorial
 This repository is a tutorial repository provided for beginner who start webpack2.
+A description of the `webpack.config.js` file is posted on the [blog](https://jaeyeophan.github.io/).
 
 ## Usage
 #### First, Check the branch!
-1. Step 1. Only basic configuration in webpack.config.js
+1. [Step 1. Only basic configuration in webpack.config.js](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-1)
 
 ## Installation
 ```bash
@@ -18,7 +19,5 @@ $ git clone https://github.com/JaeYeopHan/webpack2_tutorial
 $ cd webpack2_tutorial
 $ npm install
 ```
-
-A description of the `webpack.config.js` file is posted on the [blog](https://jaeyeophan.github.io/).
-
-
+## LICENSE
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>

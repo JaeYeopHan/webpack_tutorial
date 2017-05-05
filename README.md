@@ -7,7 +7,7 @@ This repository is a tutorial repository provided for beginner who start webpack
 
 ## Installation
 ```bash
-# If your local node is not installed
+# If node is not installed in your local,
 $ brew install node 
 ```
 and,

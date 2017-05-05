@@ -1,10 +1,9 @@
 ![](./images/webpack.png)
-# Webpack2 Tutorial
-
+# Webpack2 Tutorial  
 This repository is a tutorial repository provided for beginner who start webpack2.
 _This tutorial is based on webpack of [version 2.5.0 release](https://github.com/webpack/webpack/releases)_.
 A description of the `webpack.config.js` file is posted on the [blog](https://jaeyeophan.github.io/).
----
+
 Webpack version 2.5.0 기준으로 tutorial을 진행할 수 있는 Repository입니다.
 
 ## Usage

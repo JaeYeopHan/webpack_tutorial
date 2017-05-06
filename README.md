@@ -13,7 +13,7 @@ Webpack version 2.5.0 기준으로 tutorial을 진행할 수 있는 Repository�
 다음 리스트는 branch에 링크 되어있습니다.
 1. [Step 1. 기본 설정들에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-1)
 2. [Step 2. 각종 플러그인에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-2)
-3. [Step 3. Config's other options]
+3. [Step 3. Config's other options](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-3)
 4. [Step 4. Seperate dev and prod environment]
 
 #### or fork this repository and enjoy webpack!

@@ -161,6 +161,6 @@ new webpack.NoEmitOnErrorsPlugin()
 _2편 end_
 
 #### Reference
-[Webpack Plugins](https://webpack.js.org/plugins/)
-[Webpck official DOCS](https://webpack.js.org/configuration/plugins/)
-[Webpck official CONCEPT](https://webpack.js.org/concepts/hot-module-replacement/)
+[Webpack Plugins](https://webpack.js.org/plugins/)  
+[Webpck official DOCS](https://webpack.js.org/configuration/plugins/)  
+[Webpck official CONCEPT](https://webpack.js.org/concepts/hot-module-replacement/)  

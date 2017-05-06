@@ -4,11 +4,16 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+
+    context: path.join(__dirname),
+
     entry: ['./src/index.js'],
+
     output: {
         filename: 'bundle.js',
         path: path.join(__dirname, 'dist'),
     },
+
     module: {
         rules: [{
             test: /\.js$/,
@@ -25,6 +30,7 @@ module.exports = {
             })
         }]
     },
+
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
@@ -37,10 +43,21 @@ module.exports = {
         new ExtractTextPlugin('styles.css'),
         new HtmlWebpackPlugin({
             template: './index.html'
+        }),
+        new webpack.EnvironmentPlugin(['NODE_ENV', 'DEBUG']),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV' : JSON.stringify(process.env.NODE_ENV),
+            'process.env.DEBUG' : JSON.stringify(process.env.DEBUG)
         })
     ],
+
+    devtool: 'inline-source-map',
+
     devServer: {
-        contentBase: './dist',
-        hot: true
+        hot: true,
+        inline: true,
+        compress: true,
+        contentBase: path.join(__dirname, '/dist/'),
     }
 };
+console.log(`process.env: ${process.env.NODE_ENV}`);

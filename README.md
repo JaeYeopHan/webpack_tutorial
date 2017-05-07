@@ -15,6 +15,8 @@ A description of the `webpack.config.js` file is posted on the [blog](https://ja
 2. [Step 2. 각종 플러그인에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-2)
 3. [Step 3. Webpack의 추가적인 기능들](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-3)
 4. [Step 4. Seperate dev and prod environment]
+5. [Step 5. Test Runner, Test framework integration]
+6. [Step 6. 성능, Tree Shaking]
 
 #### or fork this repository and enjoy webpack!
 

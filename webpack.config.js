@@ -14,6 +14,15 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
     },
 
+    devtool: 'eval-source-map',
+
+    devServer: {
+        hot: true,
+        inline: true,
+        compress: true,
+        contentBase: path.join(__dirname, '/dist/'),
+    },
+
     module: {
         rules: [{
             test: /\.js$/,
@@ -32,6 +41,7 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.optimize.UglifyJsPlugin(),
@@ -42,7 +52,12 @@ module.exports = {
         }),
         new ExtractTextPlugin('styles.css'),
         new HtmlWebpackPlugin({
-            template: './index.html'
+            template: './index.html',
+            minify: {
+                collapseWhitespace: true,
+                keepClosingSlash: true,
+                removeComments: true
+            }
         }),
         new webpack.EnvironmentPlugin(['NODE_ENV', 'DEBUG']),
         new webpack.DefinePlugin({
@@ -50,14 +65,4 @@ module.exports = {
             'process.env.DEBUG' : JSON.stringify(process.env.DEBUG)
         })
     ],
-
-    devtool: 'inline-source-map',
-
-    devServer: {
-        hot: true,
-        inline: true,
-        compress: true,
-        contentBase: path.join(__dirname, '/dist/'),
-    }
 };
-console.log(`process.env: ${process.env.NODE_ENV}`);

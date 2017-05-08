@@ -78,6 +78,7 @@ webpack에서 제공하는 기술 중, `SourceMaps`이라는 기술이 있습니
 |eval-source-map|- -|+|no|
 |source-map|- -|- -|yes|
 |nosources-source-map|- -|- -|yes|
+
 https://webpack.js.org/configuration/devtool/
 
 Webpack2 공식 홈페이지에서 소개하고 있는 devtool 옵션들입니다. `+`는 작업 속도가 빠르다는 것을 의마하며 `-`는 그 반대로 느린 것을 의미합니다. 이 많은 옵션 중에서 개발할 때 적합한 옵션은 무엇이고, 배포할 때 적합한 옵션은 무엇일까요?

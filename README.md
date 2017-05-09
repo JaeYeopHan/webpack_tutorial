@@ -18,7 +18,7 @@ A description of the `webpack.config.js` file is posted on the [blog](https://ja
 5. [Step 5. Test Runner, Test framework integration]
 6. [Step 6. 성능, Tree Shaking]
 
-* [SpringBoot + Webpack2 Scaffolding]
+* [SpringBoot + Webpack2 Scaffolding](https://github.com/JaeYeopHan/Springboot_webpack2)
 * [React & Redux + Webpack2 Scaffolding]
 
 #### or fork this repository and enjoy webpack!

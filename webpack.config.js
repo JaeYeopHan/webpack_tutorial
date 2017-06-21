@@ -44,7 +44,14 @@ module.exports = {
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
-        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                unused: true
+            }
+        }),
+        new webpack.LoaderOptionsPlugin({
+            minimize: true
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'commons',
             filename: 'commons.js',

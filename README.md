@@ -15,8 +15,7 @@ A description of the `webpack.config.js` file is posted on the [blog](https://ja
 2. [Step 2. 각종 플러그인에 대해서 알아봅니다.](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-2)
 3. [Step 3. Webpack의 추가적인 기능들](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-3)
 4. [Step 4. Seperate dev and prod environment](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-4)
-5. [Step 6. 성능, Tree Shaking]
-
+5. [Step 5. 성능, Tree Shaking](https://github.com/JaeYeopHan/webpack2_tutorial/tree/Step-5)
 
 * [SpringBoot + Webpack2 Scaffolding](https://github.com/JaeYeopHan/Springboot_webpack2)
 * [React-Express + Webpack2 Scaffolding](https://github.com/JaeYeopHan/Express_react_scaffolding)

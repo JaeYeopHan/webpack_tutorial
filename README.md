@@ -1,4 +1,4 @@
-# [Tool] Webpack2, 입문 가이드 1편
+# [Tool] Webpack, 입문 가이드 1편
 
 ## Webpack이란 무엇인가
 너무 유명해져서 더이상의 말은 필요없을 것 같습니다:) 이에 대해 잘 정리해놓은 문서도 정말 많구요! 이 포스팅에서는 `webpack.config.js` 파일의 구조에 집중할 예정입니다. 아래 Reference의 링크를 참고해주세요!
@@ -36,7 +36,7 @@ const config = {
   entry: './path/to/my/entry/file.js'
 };
 ```
-배열을 사용하는 경우의 대표적인 경우로는 `react-hot-loader`를 사용하는 경우가 있습니다.
+배열을 사용하는 경우의 대표적인 경우로는 `react-hot-loader`를 사용하는 경우가 있습니다. [cra-eject-version-webpack-dev-config](https://github.com/JaeYeopHan/cra_eject_version_for_ref/blob/master/config/webpack.config.dev.js#L35)
 
 #### Usage2: `entry: {[entryChunkName: string]: string|Array<string>}`
 `entry point`를 여러 개 설정해야 하는 경우에는 Object를 사용하여 지정할 수 있습니다.
@@ -50,6 +50,7 @@ const config = {
 ```
 다른 `entry point`에서 시작하므로 각각의 `entry point`에서 생성된 그래프는 **완전히 독립적인 그래프**가 됩니다. (이러는 경우 각각의 dependency tree에서 중복되는 코드들이 발생할 수 있는데 이 부분은 `commons-chunk-plugin`을 통해서 해결할 수 있습니다.)
 
+<br/>
 
 ### Output
 `entry`로 지정된 파일로부터 bundling을 진행하고, 그 결과를 **어떻게 할지**를 설정합니다.
@@ -84,7 +85,9 @@ const config = {
 };
 ```
 `path` 모듈을 통해 path를 정리한 후의 상태입니다.
+
 <br/>
+
 ### module
 `module` 옵션은 webpack을 통해 bundling을 진행할 때 처리해야 하는 task들을 실행할 때 사용합니다. ES5 문법을 사용하기 위해 먼저 `babel`을 통해 **transpile**을 해야 하는데 이 작업을 `babel-loader`를 통해 설정해줄 수 있습니다. 또 javascript 파일 뿐만 아니라 css 파일을 load해야하는 경우에는 `css-loader`를 사용할 수 있습니다.
 

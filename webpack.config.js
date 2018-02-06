@@ -26,7 +26,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        // new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.optimize.UglifyJsPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
@@ -40,7 +40,6 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: './dist',
-        hot: true
+        inline: true,
     }
 };

@@ -1,10 +1,9 @@
-# [Tool] Webpack2, 입문 가이드 2편
-[> Webpack2, 입문 가이드 1편 >](https://jaeyeophan.github.io/2017/05/05/webpack-tutorial-1/)
+# [Tool] Webpack, 입문 가이드 2편
 
 ## Plugins
 플러그인을 통해 코드를 난독화(Uglify)하여 압축할 수 있고, 공통된 코드(Common chunk)를 분리할 수 있고, 코드의 변경사항을 파악하게 하여 자동으로 재실행시킬 수 있습니다. 이외에도 여러 가지 훌륭한 기능들이 존재하는데요, Webpack이 제공하는 플러그인과 외부 플러그인들 중에서 일부에 대해 알아봅니다.
 
-Webpack에 내장된 플러그인에는 `webpack.[plugin-name]`을 통해 접근할 수 있습니다.
+_cf) Webpack에 내장된 플러그인에는 `webpack.[plugin-name]`을 통해 접근할 수 있습니다._
 
 ```js webpack.config.js
 const webpack = require('webpack');
@@ -16,7 +15,11 @@ const config = {
 }
 module.exports = config;
 ```
-`plugins`에는 배열을 통하여 여러 플러그인을 설정할 수 있습니다. 1편에서와는 다르게 기본 구조에서 코드 한 줄이 추가되었는데요, webpack이 제공하는 플러그인을 사용하기 위해서 `webpack`이란 모듈을 불러와야 합니다.
+`entry`와 `output`에 대해서는 1편에서 살펴봤습니다. `plugins`에는 배열을 통하여 여러 플러그인을 설정할 수 있습니다. 1편에서와는 다르게 기본 구조에서 코드 한 줄이 추가되었는데요,
+```js
+const webpack = require('webpack');
+```
+webpack이 제공하는 플러그인을 사용하기 위해서 `webpack`이란 모듈을 불러와야 합니다.
 
 </br>
 
@@ -36,6 +39,39 @@ const config = {
 }
 ```
 `UglifyJsPlugin`은 `optimize`로 접근할 수 있습니다. config파일 설정을 마쳤으면 `$ webpack` 명령어를 수행해줍니다. 그리고 나서 `dist/bundle.js` 파일을 확인해봅니다. 코드가 한 줄로 알아볼 수 없게 압축되어 있는 것을 확인하실 수 있습니다 :) 해당 플러그인을 생성할 때, 파라미터로 옵션을 전달할 수 있습니다. 이 예제에서는 압축 시 발생할 수 있는 경고를 무시하는 옵션을 추가했습니다.
+
+```js webpack.config.js
+module.exports = {
+  plugins: [new UglifyJsPlugin({
+    sourceMap: true,
+    compress: {
+      // dev terminal console
+      warnings: true,
+
+      // drop console.* calls
+      drop_console: true,
+
+      // drop unref'd vars/funcs
+      unused: true,
+
+      // drop unreachable code
+      dead_code: true,
+
+      // false: support ie8
+      screw_ie8: false
+    },
+    mangle: {
+      // false: support ie8
+      screw_ie8: false
+    },
+    output: {
+      // false: support ie8
+      screw_ie8: false
+    }
+  })]
+};
+```
+좀 더 많은 옵션을 추가하여 `UglifyJS` 플러그인을 설정할 수 있습니다. 각 옵션에 대한 설명은 주석을 통해 추가했습니다.
 
 </br>
 
@@ -144,13 +180,9 @@ const config = {
 ```
 `$ webpack-dev-server --watch`를 실행하고 js파일을 수정하고 저장을 해주면 자동으로 웹브라우저에 reload가 되는 것을 확인하실 수 있습니다! (`devServer`는 config에서 설정할 수 있는 또다른 옵션입니다.)
 
-</br>
+> HMR should never be used in production.
 
-### NoEmitOnErrorsPlugin
-컴파일 도중 오류가 발생한 리소스들은 제외하고 작업을 진행하여 bundling하도록 합니다. 참고로 `NoErrosPlugin`은 deprecated되었습니다.
-```js
-new webpack.NoEmitOnErrorsPlugin()
-```
+Webpack Official document에는 위와 같은 문구가 적혀있는데요, HMR 모듈은 개발 시에만 필요하기 때문에 production mode로 build 시 필요없다는 의미입니다. `dev` mode와 `production` mode를 분리할 때, 해당 옵션은 `dev` mode 일 때만 동작하도록 해줘야 합니다.
 
 <br/>
 
